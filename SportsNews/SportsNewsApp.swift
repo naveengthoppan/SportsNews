@@ -11,7 +11,11 @@ import SwiftUI
 struct SportsNewsApp: App {
     var body: some Scene {
         WindowGroup {
-            SportsNewsListView(viewModel: SportsNewsListViewModel(apiService: APIClient()))
+            ResultsListView(
+                viewModel: .init(
+                    apiService: APIClient()
+                )
+            )
         }
     }
 }

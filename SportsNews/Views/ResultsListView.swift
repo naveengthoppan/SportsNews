@@ -9,9 +9,9 @@ import Combine
 import SwiftUI
 
 
-struct SportsNewsListView: View {
+struct ResultsListView: View {
     
-    @ObservedObject var viewModel: SportsNewsListViewModel
+    @ObservedObject var viewModel: ResultsViewModel
     
     var body: some View {
         
@@ -21,15 +21,22 @@ struct SportsNewsListView: View {
                     viewModel.fetchSportsResults()
                 }
             } else if viewModel.isFetching {
-                ProgressView()
+                ProgressView("Loading news")
                     .progressViewStyle(.circular)
             } else {
                 if let errorMessage = viewModel.errorMessage {
                     Text(errorMessage)
                 } else {
-                    List(viewModel.resultsToDisply) { sportResult in
-                        Text(sportResult.resultText)
+                    VStack {
+                        NavigationView {
+                            List(viewModel.resultViewModels) { sportResult in
+                                    ResultRowView(resultDisplayable: sportResult)
+                            }
+                            .navigationTitle(viewModel.populateResultHeader())
+                        }
+                        
                     }
+                    
                     .listStyle(.plain)
                 }
             }
@@ -39,6 +46,10 @@ struct SportsNewsListView: View {
 
 struct SportsNewsListView_Previews: PreviewProvider {
     static var previews: some View {
-        SportsNewsListView(viewModel: SportsNewsListViewModel(apiService: APIPreviewClient()))
+        ResultsListView(
+            viewModel: .init(
+                apiService: APIPreviewClient()
+            )
+        )
     }
 }
