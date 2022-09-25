@@ -7,13 +7,6 @@
 
 import Foundation
 
-enum GameType: String {
-    case f1
-    case nba
-    case tennis
-    case other
-}
-
 struct GameResult {
     var id: UUID = UUID()
     var date: Date

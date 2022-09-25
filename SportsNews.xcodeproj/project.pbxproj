@@ -28,6 +28,8 @@
 		FE011F1828E07D51009BC80A /* GameResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE011F1728E07D51009BC80A /* GameResult.swift */; };
 		FE011F1B28E084E1009BC80A /* GameResultDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE011F1A28E084E1009BC80A /* GameResultDisplayable.swift */; };
 		FE011F1F28E088F5009BC80A /* ResultRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE011F1E28E088F5009BC80A /* ResultRowView.swift */; };
+		FE011F2528E1125E009BC80A /* F1Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE011F2428E1125E009BC80A /* F1Result.swift */; };
+		FE011F2728E1129A009BC80A /* NbaResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE011F2628E1129A009BC80A /* NbaResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		FE011F1728E07D51009BC80A /* GameResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResult.swift; sourceTree = "<group>"; };
 		FE011F1A28E084E1009BC80A /* GameResultDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultDisplayable.swift; sourceTree = "<group>"; };
 		FE011F1E28E088F5009BC80A /* ResultRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRowView.swift; sourceTree = "<group>"; };
+		FE011F2428E1125E009BC80A /* F1Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1Result.swift; sourceTree = "<group>"; };
+		FE011F2628E1129A009BC80A /* NbaResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NbaResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,8 +170,10 @@
 		FE011F1028DFCD24009BC80A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FE011ED828DCEF96009BC80A /* SportsResult.swift */,
 				FE011F1728E07D51009BC80A /* GameResult.swift */,
+				FE011ED828DCEF96009BC80A /* SportsResult.swift */,
+				FE011F2428E1125E009BC80A /* F1Result.swift */,
+				FE011F2628E1129A009BC80A /* NbaResult.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -270,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE011EE028DCF290009BC80A /* APIErrorMapper.swift in Sources */,
+				FE011F2528E1125E009BC80A /* F1Result.swift in Sources */,
 				FE011E9A28DCE9FA009BC80A /* ResultsListView.swift in Sources */,
 				FE011E8C28DCE954009BC80A /* SportsNewsApp.swift in Sources */,
 				FE011F1628E04B09009BC80A /* ResultViewModel.swift in Sources */,
@@ -282,6 +289,7 @@
 				FE011ED928DCEF96009BC80A /* SportsResult.swift in Sources */,
 				FE011F1F28E088F5009BC80A /* ResultRowView.swift in Sources */,
 				FE011ED528DCECAE009BC80A /* StatusCode+Helpers.swift in Sources */,
+				FE011F2728E1129A009BC80A /* NbaResult.swift in Sources */,
 				FE011F1828E07D51009BC80A /* GameResult.swift in Sources */,
 				FE011F1B28E084E1009BC80A /* GameResultDisplayable.swift in Sources */,
 				FE011ED728DCEDF8009BC80A /* Environment.swift in Sources */,

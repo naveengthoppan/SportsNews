@@ -45,11 +45,9 @@ import Foundation
                 case .finished:
                     self?.showFetchNewsButton = false
                     self?.isFetching = false
-                    print("Successfully Fetched News")
                 case .failure(let error):
                     self?.showFetchNewsButton = true
                     self?.isFetching = false
-                    print("Unable to Fetch News \(error)")
                     self?.errorMessage = APIErrorMapper(
                         error: error,
                         context: .results
