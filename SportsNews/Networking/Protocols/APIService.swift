@@ -10,6 +10,4 @@ import Combine
 
 protocol APIService {
     func fetchResults() -> AnyPublisher<SportsResults, APIError>
-    
-    
 }

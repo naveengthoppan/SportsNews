@@ -28,7 +28,6 @@
 		FE011F1828E07D51009BC80A /* GameResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE011F1728E07D51009BC80A /* GameResult.swift */; };
 		FE011F1B28E084E1009BC80A /* GameResultDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE011F1A28E084E1009BC80A /* GameResultDisplayable.swift */; };
 		FE011F1F28E088F5009BC80A /* ResultRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE011F1E28E088F5009BC80A /* ResultRowView.swift */; };
-		FE011F2228E0A2A0009BC80A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE011F2128E0A2A0009BC80A /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +53,6 @@
 		FE011F1728E07D51009BC80A /* GameResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResult.swift; sourceTree = "<group>"; };
 		FE011F1A28E084E1009BC80A /* GameResultDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultDisplayable.swift; sourceTree = "<group>"; };
 		FE011F1E28E088F5009BC80A /* ResultRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRowView.swift; sourceTree = "<group>"; };
-		FE011F2128E0A2A0009BC80A /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +85,6 @@
 		FE011E8A28DCE954009BC80A /* SportsNews */ = {
 			isa = PBXGroup;
 			children = (
-				FE011F2028E0A1AC009BC80A /* Extensions */,
 				FE011F1928E084D2009BC80A /* Protocols */,
 				FE011F1028DFCD24009BC80A /* Models */,
 				FE011EE128DE6D64009BC80A /* Views */,
@@ -160,9 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				FE011E9928DCE9FA009BC80A /* ResultsListView.swift */,
-				FE011E9B28DCEA91009BC80A /* ResultsViewModel.swift */,
-				FE011F1528E04B09009BC80A /* ResultViewModel.swift */,
 				FE011F1E28E088F5009BC80A /* ResultRowView.swift */,
+				FE011F2328E0B751009BC80A /* View Models */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,12 +189,13 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		FE011F2028E0A1AC009BC80A /* Extensions */ = {
+		FE011F2328E0B751009BC80A /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				FE011F2128E0A2A0009BC80A /* Date+Extension.swift */,
+				FE011E9B28DCEA91009BC80A /* ResultsViewModel.swift */,
+				FE011F1528E04B09009BC80A /* ResultViewModel.swift */,
 			);
-			path = Extensions;
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +286,6 @@
 				FE011F1B28E084E1009BC80A /* GameResultDisplayable.swift in Sources */,
 				FE011ED728DCEDF8009BC80A /* Environment.swift in Sources */,
 				FE011E9C28DCEA91009BC80A /* ResultsViewModel.swift in Sources */,
-				FE011F2228E0A2A0009BC80A /* Date+Extension.swift in Sources */,
 				FE011EC428DCEB0F009BC80A /* APIEndPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

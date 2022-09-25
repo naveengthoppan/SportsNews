@@ -30,7 +30,7 @@ fileprivate extension APIPreviewClient {
             let data = try? Data(contentsOf: url),
             let stubData = try? JSONDecoder().decode(T.self, from: data)
         else {
-            fatalError("Unable to Load Episodes")
+            fatalError("Unable to Load Results")
         }
         return stubData
     }
